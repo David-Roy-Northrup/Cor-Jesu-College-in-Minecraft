@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cor Jesu College in Minecraft</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin-left: 5%;
+      margin-right: 5%;
+      padding: 0;
+      background-image: url('img/bg-pc.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top center;
+    }
+
+    header {
+      padding: 2%;
+      text-align: center;
+    }
+
+    footer {
+      position: fixed;
+      text-align: center;
+      color: white;
+      bottom: 2%;
+      width: 100%
+    }
+
+    #headerIMG {
+        width: 50%;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10%;
+      margin-top: 2%;
+    }
+
+    .hollow-button {
+      flex: 1 1 200px;
+      text-align: center;
+      padding: 15px 20px;
+      font-size: 1rem;
+      color: white;
+      border: 2px solid white;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+      backdrop-filter: blur(2px);
+    }
+
+    .hollow-button:hover {
+      background: white;
+      color: black;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.2rem;
+      }
+
+      .hollow-button {
+        flex: 1 1 100%;
+      }
+
+      body {
+        background-image: url('img/bg-mobile.png');
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img id="headerIMG" src="img/header.png" alt="Cor Jesu College made in Minecraft">
+  </header>
+
+  <div class="container">
+    <a class="hollow-button" href="java.html">Download for Java Version</a>
+    <a class="hollow-button" href="bedrock.html">Download for Bedrock Edition</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 David Roy A. Northrup. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
